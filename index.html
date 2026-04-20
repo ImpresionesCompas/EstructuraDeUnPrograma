@@ -1,48 +1,39 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Estructura de un Programa</title>
-  <style>
-    *{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
-    body{background:linear-gradient(135deg,#020617,#0f172a,#1d4ed8,#2563eb,#38bdf8);color:#fff;overflow-x:hidden}
-    header{padding:50px 20px;text-align:center;animation:fadeDown 1.2s ease}
-    header h1{font-size:3rem;color:#93c5fd}
-    header p{margin-top:10px;color:#dbeafe}
-    .container{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px;padding:30px;max-width:1300px;margin:auto}
-    .card{background:linear-gradient(145deg,rgba(30,41,59,.75),rgba(37,99,235,.25),rgba(56,189,248,.18));backdrop-filter:blur(8px);border-radius:24px;padding:20px;box-shadow:0 8px 20px rgba(0,0,0,.3);transition:.4s;animation:fadeUp 1s ease;border:1px solid rgba(147,197,253,.25)}
-    .card:hover{transform:translateY(-10px) scale(1.03)}
-    .card img,.card video{width:100%;height:160px;object-fit:cover;border-radius:18px;margin-bottom:15px}
-    .card h2{font-size:1.2rem;color:#bfdbfe;margin-bottom:10px;text-shadow:0 0 8px rgba(59,130,246,.4)}
-    .card p{font-size:.95rem;line-height:1.5;color:#e2e8f0}
-    footer{text-align:center;padding:25px;color:#cbd5e1;font-size:.9rem}
-    @keyframes fadeDown{from{opacity:0;transform:translateY(-30px)}to{opacity:1;transform:translateY(0)}}
-    @keyframes fadeUp{from{opacity:0;transform:translateY(30px)}to{opacity:1;transform:translateY(0)}}
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Estructura de un Programa</title>
+<style>
+*{margin:0;padding:0;box-sizing:border-box;font-family:Arial,sans-serif}
+body{background:linear-gradient(135deg,#020617,#0f172a,#1d4ed8,#2563eb,#38bdf8);color:#fff;overflow-x:hidden}
+header{padding:50px 20px;text-align:center}
+header h1{font-size:3rem;color:#93c5fd} header p{margin-top:10px;color:#dbeafe}
+.container{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px;padding:30px;max-width:1300px;margin:auto}
+.card{background:linear-gradient(145deg,rgba(30,41,59,.75),rgba(37,99,235,.25));border-radius:24px;padding:20px;box-shadow:0 8px 20px rgba(0,0,0,.3);transition:.4s}
+.card:hover{transform:translateY(-8px) scale(1.02)}
+.card img,.card video{width:100%;height:160px;object-fit:cover;border-radius:18px;margin-bottom:15px}
+.card h2{color:#bfdbfe;margin-bottom:10px}.card p{line-height:1.5;color:#e2e8f0}
+footer{text-align:center;padding:25px;color:#cbd5e1}
+</style>
 </head>
 <body>
-  <header>
-    <h1>Estructura de un Programa</h1>
-    <p>Conceptos básicos para comprender cómo funciona un programa informático.</p>
-  </header>
-
-  <section class="container">
-    <div class="card"><img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=800" alt="Entrada"><h2>Entrada</h2><p>Es la información que el usuario o sistema proporciona para iniciar una tarea dentro del programa.</p></div>
-    <div class="card"><video autoplay muted loop playsinline controls><source src="https://assets.mixkit.co/videos/preview/mixkit-hands-of-a-man-typing-on-a-keyboard-2540-large.mp4" type="video/mp4"></video><h2>Proceso</h2><p>Es el conjunto de operaciones que transforman los datos de entrada para obtener un resultado.</p></div>
-    <div class="card"><img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800" alt="Salida"><h2>Salida</h2><p>Es el resultado final que el programa muestra al usuario después de procesar la información.</p></div>
-    <div class="card"><img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=800" alt="Reservadas"><h2>Palabras Reservadas</h2><p>Son términos del lenguaje de programación con funciones especiales que no pueden usarse libremente.</p></div>
-    <div class="card"><video autoplay muted loop playsinline controls><source src="https://assets.mixkit.co/videos/preview/mixkit-digital-animation-of-a-city-network-40901-large.mp4" type="video/mp4"></video><h2>Programación Orientada a Objetos</h2><p>Organiza el código en objetos que contienen datos y funciones para representar elementos reales.</p></div>
-    <div class="card"><img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800" alt="Propiedades"><h2>Propiedades</h2><p>Son características que describen un objeto. Las más comunes son nombre, color, tamaño, posición y estado.</p></div>
-    <div class="card"><img src="https://images.unsplash.com/photo-1516116216624-53e697fedbea?w=800" alt="Métodos"><h2>Métodos</h2><p>Son acciones que realiza un objeto. Algunos métodos comunes son iniciar(), mostrar(), guardar() y actualizar().</p></div>
-    <div class="card"><img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=800" alt="Datos"><h2>Datos y Tipos de Eventos</h2><p>Los datos guardan información. Eventos comunes son clic, doble clic, teclas presionadas y carga de página.</p></div>
-    <div class="card"><img src="https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?w=800" alt="Enteros"><h2>Enteros</h2><p>Son números sin decimales utilizados para cantidades exactas.</p></div>
-    <div class="card"><img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800" alt="Flotantes"><h2>Flotantes</h2><p>Son números con decimales para representar valores más precisos.</p></div>
-    <div class="card"><img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800" alt="Textos"><h2>Textos</h2><p>Son cadenas de caracteres que almacenan palabras o símbolos.</p></div>
-    <div class="card"><img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800" alt="Booleanos"><h2>Booleanos</h2><p>Representan dos valores lógicos: verdadero o falso.</p></div>
-    <div class="card"><video autoplay muted loop playsinline controls><source src="https://assets.mixkit.co/videos/preview/mixkit-programmer-working-on-his-laptop-301-large.mp4" type="video/mp4"></video><h2>Entorno de Trabajo</h2><p>Es el espacio donde el programador escribe, organiza y prueba su código.</p></div>
-  </section>
-
-  <footer>Página educativa sobre conceptos básicos de programación</footer>
+<header><h1>Estructura de un Programa</h1><p>Conceptos básicos para comprender cómo funciona un programa informático.</p></header>
+<section class="container">
+<div class="card"><img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?w=800" alt="Entrada"><h2>Entrada</h2><p>Es la información que el usuario ingresa al programa.<br><strong>Ejemplo:</strong> escribir un nombre en un formulario.</p></div>
+<div class="card"><video src="https://assets.mixkit.co/videos/preview/mixkit-hands-of-a-man-typing-on-a-keyboard-2540-large.mp4" autoplay muted loop playsinline></video><h2>Proceso</h2><p>Transforma los datos para obtener un resultado.<br><strong>Ejemplo:</strong> calcular una suma automáticamente.</p></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?w=800" alt="Salida"><h2>Salida</h2><p>Es el resultado mostrado por el programa.<br><strong>Ejemplo:</strong> mostrar un mensaje en pantalla.</p></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1555949963-aa79dcee981c?w=800" alt="Reservadas"><h2>Palabras Reservadas</h2><p>Son palabras propias del lenguaje.<br><strong>Ejemplo:</strong> if, else, while.</p></div>
+<div class="card"><video src="https://assets.mixkit.co/videos/preview/mixkit-digital-animation-of-a-city-network-40901-large.mp4" autoplay muted loop playsinline></video><h2>Programación Orientada a Objetos</h2><p>Organiza el código en objetos.<br><strong>Ejemplo:</strong> un objeto Auto con color y velocidad.</p></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1451187580459-43490279c0fa?w=800" alt="Propiedades"><h2>Propiedades</h2><p>Describen un objeto.<br><strong>Ejemplo:</strong> color = azul.</p></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1516116216624-53e697fedbea?w=800" alt="Métodos"><h2>Métodos</h2><p>Acciones de un objeto.<br><strong>Ejemplo:</strong> guardar() o imprimir().</p></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1518770660439-4636190af475?w=800" alt="Datos"><h2>Datos y Tipos de Eventos</h2><p>Los eventos activan acciones.<br><strong>Ejemplo:</strong> clic en un botón.</p></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1517430816045-df4b7de11d1d?w=800" alt="Enteros"><h2>Enteros</h2><p>Números sin decimales.<br><strong>Ejemplo:</strong> 25</p></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1517694712202-14dd9538aa97?w=800" alt="Flotantes"><h2>Flotantes</h2><p>Números con decimales.<br><strong>Ejemplo:</strong> 15.75</p></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1498050108023-c5249f4df085?w=800" alt="Textos"><h2>Textos</h2><p>Cadenas de caracteres.<br><strong>Ejemplo:</strong> "Hola mundo"</p></div>
+<div class="card"><img src="https://images.unsplash.com/photo-1504384308090-c894fdcc538d?w=800" alt="Booleanos"><h2>Booleanos</h2><p>Valores lógicos.<br><strong>Ejemplo:</strong> verdadero o falso.</p></div>
+<div class="card"><video src="https://assets.mixkit.co/videos/preview/mixkit-programmer-working-on-his-laptop-301-large.mp4" autoplay muted loop playsinline></video><h2>Entorno de Trabajo</h2><p>Espacio donde se programa.<br><strong>Ejemplo:</strong> Visual Studio Code.</p></div>
+</section>
+<footer>Página educativa sobre conceptos básicos de programación</footer>
 </body>
-</html>ideo autoplay muted loop playsinline controls><source src="https://assets.mixkit.co/videos/preview/mixkit-programmer-working-on-his-laptop-301-large.mp4" type="video/mp4"></video><h2>Entorno de Trabajo</h2><p>Es el espacio donde el programador escribe, organiza y prueba su c
+</html>
